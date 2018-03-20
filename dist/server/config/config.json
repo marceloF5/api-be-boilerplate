@@ -1,0 +1,9 @@
+{
+    "test": {
+        "username": "postgres",
+        "password": "pgroot",
+        "database": "pll_db_test",
+        "host": "localhost",
+        "dialect": "postgres"
+    }
+}

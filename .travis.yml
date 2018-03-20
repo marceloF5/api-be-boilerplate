@@ -1,0 +1,24 @@
+sudo: required
+language: node_js
+notifications:
+  email: mp.fortunato88@gmail.com
+node_js:
+- 8.9.0
+services:
+- postgresql
+env:
+  global:
+  - NODE_ENV: test
+  - TRAVIS: true
+addons:
+  postgresql: '9.3'
+before_script:
+- psql -c 'create database pll_db_test;'
+- npm i -g sequelize-cli gulp-cli
+- cd server/
+- sequelize db:migrate --env test
+- npm install 
+- gulp
+script:
+- npm run unit-test
+- npm run integration-test          

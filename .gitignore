@@ -1,0 +1,6 @@
+node_modules
+.nyc_output
+coverage
+server/server.js
+package-lock.json
+.vscode
