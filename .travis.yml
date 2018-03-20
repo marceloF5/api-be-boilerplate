@@ -1,8 +1,8 @@
-install: travis_wait 30 mvn install
 sudo: required
 language: node_js
 notifications:
   email: mp.fortunato88@gmail.com
+install: travis_wait 30 mvn install  
 node_js:
 - 8.9.0
 services:
