@@ -2,7 +2,6 @@ sudo: required
 language: node_js
 notifications:
   email: mp.fortunato88@gmail.com
-install: travis_wait 30 mvn install  
 node_js:
 - 8.9.0
 services:
@@ -21,5 +20,4 @@ before_script:
 - npm install 
 - gulp
 script:
-- npm run unit-test
-- npm run integration-test          
+- npm run test
