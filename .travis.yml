@@ -20,4 +20,4 @@ before_script:
 - npm install 
 - gulp
 script:
-- npm run test
+- npm run integration-test
